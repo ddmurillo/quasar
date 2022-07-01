@@ -18,3 +18,18 @@ func GetLocation(distances ...float32) (float32, float32) {
 
 	return float32(cx), float32(cy)
 }
+
+func GetMessages(messages ...[]string) string {
+	var msg string = ""
+	var maxlen int = 0
+	for i := 0; i < len(messages); i++ {
+		if len(messages[i]) > maxlen {
+			maxlen = len(messages[i])
+		}
+	}
+
+	// maxima longitud del mensaje
+	//var msg
+
+	return msg
+}
