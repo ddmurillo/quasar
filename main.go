@@ -2,9 +2,11 @@ package main
 
 import (
 	"fmt"
+
+	uc "github.com/ddmurillo/quasar/usecases"
 )
 
 func main() {
 
-	fmt.Println(_uc.calcule_point(-500, -200, 100, 100, -100, 115.5, 500, 100, 142.7))
+	fmt.Println(uc.GetLocation(100, 115.5, 142.7))
 }

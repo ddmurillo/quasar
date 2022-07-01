@@ -1,7 +1,6 @@
 package entities
 
-type Circle struct {
+type Position struct {
 	X float64
 	Y float64
-	R float64
 }
